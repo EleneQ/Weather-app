@@ -162,7 +162,7 @@ button {
   display: block;
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .card {
     width: calc(100% - 2rem);
   }
