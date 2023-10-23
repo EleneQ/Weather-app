@@ -6,7 +6,8 @@ const error404 = document.querySelector(".not-found");
 const searchInput = document.querySelector(".search-box input");
 
 // const weatherImg = document.querySelector(".weather img");
-const temperature = document.querySelector(".weather .temperature");
+const temperature = document.getElementById("temperature");
+const temperatureDegree = document.querySelector(".temperature span");
 const description = document.querySelector(".weather .description");
 const humidity = document.querySelector(".weather-details .humidity span");
 const windSpeed = document.querySelector(".weather-details .wind-speed span");
