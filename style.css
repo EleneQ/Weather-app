@@ -163,7 +163,7 @@ button {
 
 @media (max-width: 450px) {
   .card {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1.5rem);
     padding-inline: 15px;
     height: 80px;
   }
