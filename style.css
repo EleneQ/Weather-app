@@ -32,7 +32,7 @@ button {
   background-color: #fff;
   padding: 1.5rem 2rem;
   border-radius: 10px;
-  width: 450px;
+  width: 400px;
   height: 100px;
   overflow: hidden;
   transition: 0.6s ease-out;
@@ -44,6 +44,7 @@ button {
 
 /* Specific */
 .search-box {
+  gap: 0;
   height: min-content;
   font-size: 1.3rem;
 }
@@ -53,7 +54,7 @@ button {
   font-size: 1.3rem;
   text-transform: capitalize;
   font-weight: 500;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .search-box input::placeholder {
@@ -64,8 +65,11 @@ button {
 
 .search-box button {
   background-color: rgb(239, 243, 245);
+  /* the 3 lines below are used to make sure that the width of this button never changes */
+  width: 100vw;
+  min-width: 50px;
+  max-width: 50px;
   height: 50px;
-  width: 50px;
   border-radius: 50%;
   border: none;
   font-size: 1.2rem;
@@ -83,9 +87,9 @@ button {
   text-align: center;
 }
 
-.weather img {
-  width: 60%;
-  margin-top: 1.87rem;
+.weather canvas {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .weather .temperature {
@@ -103,6 +107,7 @@ button {
   justify-content: space-between;
   height: 100px;
   font-weight: 500;
+  margin-top: 3rem;
 }
 
 .weather-details span {
@@ -139,7 +144,7 @@ button {
 
 .fade-in {
   animation: 0.5s fadeIn forwards;
-  animation-delay: 0.2s;
+  /* animation-delay: 0.2s; */
 }
 
 @keyframes fadeIn {
@@ -157,81 +162,8 @@ button {
   display: block;
 }
 
-/*
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media(max-width: 450px) {
+  .card {
+    width: calc(100% - 2rem);
+  }
 }
-
-.location,
-.temperature {
-  height: 30%;
-  width: 50%;
-  justify-content: space-around;
-}
-
-.temperature {
-  flex-direction: column;
-}
-
-.degree-section {
-  cursor: pointer;
-}
-
-.degree-section span {
-  margin: 10px;
-  font-size: 1.875rem;
-}
-
-.degree-section h2 {
-  font-size: 2.5rem;
-}
-*/
-
-/*body {
-  text-align: center;
-}
-
-button {
-  cursor: pointer;
-
-.card {
-  width: min(90%, 470px);
-  background: linear-gradient(135deg, #00feba, #5b548a);
-  color: #fff;
-  margin: 100px auto 0;
-  border-radius: 20px;
-  padding: 40px 35px;
-}
-
-.search {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.search input,
-.search button {
-  border: none;
-  outline: none;
-  background-color: #ebfffc;
-  color: #555;
-  height: 50px;
-}
-
-.search input {
-  padding: 10px 25px;
-  height: 50px;
-  border-radius: 30px;
-  flex: 1;
-  margin-right: 16px;
-  font-size: 1.125rem;
-}
-
-.search button {
-  width: 50px;
-  border-radius: 50%;
-  font-size: 0.8rem;
-} */
