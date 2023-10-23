@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex">
+    <article class="card">
+      <div class="search-box flex">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="not-found">
+        <img
+          src="https://mlx3lspc9ed5.i.optimole.com/cb:qRHP.34dad/w:1100/h:618/q:mauto/f:best/https://www.bluehost.com/blog/wp-content/uploads/2023/07/What-is-a-404-error-code.png"
+        />
+        <p>Oops! Invalid location :/</p>
+      </div>
+
+      <div class="weather">
+        <img src="images/clear.png" alt="" />
+        <p class="temperature">28 °C</p>
+        <p class="description">Broken Clouds</p>
+      </div>
+
+      <div class="weather-details flex">
+        <div class="humidity flex">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span>88%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind-speed flex">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span>0km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
