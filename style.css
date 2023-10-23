@@ -95,7 +95,7 @@ button {
 
 .weather .description {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -139,7 +139,7 @@ button {
 
 .fade-in {
   animation: 0.5s fadeIn forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
 @keyframes fadeIn {
@@ -147,6 +147,14 @@ button {
     scale: 1;
     opacity: 1;
   }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
 
 /*
